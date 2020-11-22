@@ -1,18 +1,18 @@
 //
-//  NavMenuController.swift
+//  MedicalsheetController.swift
 //  HealthSheet
 //
-//  Created by macbook on 21/11/2020.
+//  Created by Hama on 11/22/20.
 //
 
 import UIKit
 
-class NavMenuController: UIViewController {
+class MedicalsheetController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+
+        // Do any additional setup after loading the view.
     }
     
 
