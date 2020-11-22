@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pTd-Rq-vdx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="125189860_3451188968332972_896110085611008823_n" translatesAutoresizingMaskIntoConstraints="NO" id="pTd-Rq-vdx">
                                 <rect key="frame" x="0.0" y="58" width="414" height="173"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -579,6 +579,7 @@
     </scenes>
     <resources>
         <image name="121608451_721247931936968_6424080643429221765_n" width="612" height="816"/>
+        <image name="125189860_3451188968332972_896110085611008823_n" width="460" height="244"/>
         <image name="done_47813" width="128" height="128"/>
         <image name="medication_pills_tablets_prescription_coronavirus_icon_141478" width="512" height="512"/>
         <image name="pexels-karolina-grabowska-4226805" width="2613" height="3946"/>
