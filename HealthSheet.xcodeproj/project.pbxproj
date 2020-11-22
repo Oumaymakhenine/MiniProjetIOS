@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		07CD3A88E60781FF06A7F2D3 /* Pods_HealthSheet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6D728720CCFD7FFAF1E325 /* Pods_HealthSheet.framework */; };
 		29A11EC14D33C1551B64AC59 /* Pods_HealthSheet_HealthSheetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D46FA5EB4B5501220F1F2ED /* Pods_HealthSheet_HealthSheetUITests.framework */; };
+		BBBFA1F5256AA64400369892 /* ListPatientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBFA1F4256AA64400369892 /* ListPatientsViewController.swift */; };
+		BBBFA1FA256AB57300369892 /* MedicalsheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBFA1F9256AB57300369892 /* MedicalsheetController.swift */; };
 		C7B45973F58A477FFB6EF17B /* Pods_HealthSheetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850ED54C232C6E9C3A8C374A /* Pods_HealthSheetTests.framework */; };
 		FA68C52E2569B94C009EC5FB /* NavMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68C52D2569B94C009EC5FB /* NavMenuController.swift */; };
 		FABFD0A32569AD94009F1078 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABFD0A22569AD94009F1078 /* LoginController.swift */; };
@@ -51,6 +53,8 @@
 		850ED54C232C6E9C3A8C374A /* Pods_HealthSheetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthSheetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB91B14936820FF26E315B0A /* Pods-HealthSheet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSheet.release.xcconfig"; path = "Target Support Files/Pods-HealthSheet/Pods-HealthSheet.release.xcconfig"; sourceTree = "<group>"; };
 		AE6D728720CCFD7FFAF1E325 /* Pods_HealthSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBBFA1F4256AA64400369892 /* ListPatientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPatientsViewController.swift; sourceTree = "<group>"; };
+		BBBFA1F9256AB57300369892 /* MedicalsheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalsheetController.swift; sourceTree = "<group>"; };
 		DF33CB73B9130E53A94DF7AA /* Pods-HealthSheetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSheetTests.release.xcconfig"; path = "Target Support Files/Pods-HealthSheetTests/Pods-HealthSheetTests.release.xcconfig"; sourceTree = "<group>"; };
 		F920AB80E18DF0592CDE46C0 /* Pods-HealthSheet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSheet.debug.xcconfig"; path = "Target Support Files/Pods-HealthSheet/Pods-HealthSheet.debug.xcconfig"; sourceTree = "<group>"; };
 		FA68C52D2569B94C009EC5FB /* NavMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavMenuController.swift; sourceTree = "<group>"; };
@@ -126,6 +130,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BBBFA1F3256AA60900369892 /* Doctor */ = {
+			isa = PBXGroup;
+			children = (
+				BBBFA1F4256AA64400369892 /* ListPatientsViewController.swift */,
+				BBBFA1F9256AB57300369892 /* MedicalsheetController.swift */,
+			);
+			name = Doctor;
+			sourceTree = "<group>";
+		};
 		FAD55ADF2562703200E4C01D = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +164,7 @@
 		FAD55AEA2562703200E4C01D /* HealthSheet */ = {
 			isa = PBXGroup;
 			children = (
+				BBBFA1F3256AA60900369892 /* Doctor */,
 				FAD55AEB2562703200E4C01D /* AppDelegate.swift */,
 				FAD55AED2562703200E4C01D /* SceneDelegate.swift */,
 				FAD55AEF2562703200E4C01D /* ViewController.swift */,
@@ -424,7 +438,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBBFA1F5256AA64400369892 /* ListPatientsViewController.swift in Sources */,
 				FA68C52E2569B94C009EC5FB /* NavMenuController.swift in Sources */,
+				BBBFA1FA256AB57300369892 /* MedicalsheetController.swift in Sources */,
 				FABFD0B22569AE7F009F1078 /* MenuController.swift in Sources */,
 				FAD55AF02562703200E4C01D /* ViewController.swift in Sources */,
 				FAD55AEC2562703200E4C01D /* AppDelegate.swift in Sources */,
