@@ -18,6 +18,7 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let serverUrl = "http://192.168.1.102:3000/api/auth/signin"
+       //let serverUrl = "http://192.168.1.12:3000/api/auth/signin"
         
         let x = "x"
         let rol = Role(nom: "Doctor")

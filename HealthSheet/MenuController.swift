@@ -4,24 +4,24 @@
 //
 //  Created by macbook on 21/11/2020.
 //
-//import SideMenu
+import SideMenu
 import UIKit
 
 class MenuController: UIViewController {
-       // var menu: SideMenuNavigationController?
+        var menu: SideMenuNavigationController?
         override func viewDidLoad() {
             super.viewDidLoad()
             
-           // menu = SideMenuNavigationController(rootViewController: MenuListController())
+            menu = SideMenuNavigationController(rootViewController: MenuListController())
             
-         //   menu?.leftSide = true
-          //  SideMenuManager.default.leftMenuNavigationController = menu
-          //  SideMenuManager.default.addPanGestureToPresent(toView:self.view)
+          menu?.leftSide = true
+         SideMenuManager.default.leftMenuNavigationController = menu
+        SideMenuManager.default.addPanGestureToPresent(toView:self.view)
         }
         
         @IBAction func didTapMenu() {
             
-         //   present(menu! ,animated: true)
+           present(menu! ,animated: true)
             
         }
         
