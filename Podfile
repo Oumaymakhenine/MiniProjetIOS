@@ -16,4 +16,5 @@ target 'HealthSheet' do
     # Pods for testing
   end
  pod 'SideMenu'
+ pod 'Alamofire'
 end
