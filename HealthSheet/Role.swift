@@ -6,6 +6,6 @@
 //
 
 import Foundation
-struct Role:Encodable {
+struct Role:Codable {
     var nom :String
 }

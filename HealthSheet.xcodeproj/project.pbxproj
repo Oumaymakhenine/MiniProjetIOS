@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		07CD3A88E60781FF06A7F2D3 /* Pods_HealthSheet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6D728720CCFD7FFAF1E325 /* Pods_HealthSheet.framework */; };
 		29A11EC14D33C1551B64AC59 /* Pods_HealthSheet_HealthSheetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D46FA5EB4B5501220F1F2ED /* Pods_HealthSheet_HealthSheetUITests.framework */; };
+		BB1488812574D9A300AB2A9F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1488802574D9A300AB2A9F /* WelcomeViewController.swift */; };
 		BBBFA1F5256AA64400369892 /* ListPatientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBFA1F4256AA64400369892 /* ListPatientsViewController.swift */; };
 		BBBFA1FA256AB57300369892 /* MedicalsheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBFA1F9256AB57300369892 /* MedicalsheetController.swift */; };
 		BBF224A125728AF60002257E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF224A025728AF60002257E /* User.swift */; };
@@ -58,6 +59,7 @@
 		850ED54C232C6E9C3A8C374A /* Pods_HealthSheetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthSheetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C6F021186FDA8DA0E60373 /* Pods-HealthSheet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSheet.release.xcconfig"; path = "Target Support Files/Pods-HealthSheet/Pods-HealthSheet.release.xcconfig"; sourceTree = "<group>"; };
 		AE6D728720CCFD7FFAF1E325 /* Pods_HealthSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1488802574D9A300AB2A9F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = Assets.xcassets/WelcomeViewController.swift; sourceTree = "<group>"; };
 		BBBFA1F4256AA64400369892 /* ListPatientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPatientsViewController.swift; sourceTree = "<group>"; };
 		BBBFA1F9256AB57300369892 /* MedicalsheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalsheetController.swift; sourceTree = "<group>"; };
 		BBF224A025728AF60002257E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				FAD55AF92562703500E4C01D /* LaunchScreen.storyboard */,
 				FAD55AFC2562703500E4C01D /* Info.plist */,
 				FAD55AF42562703200E4C01D /* HealthSheet.xcdatamodeld */,
+				BB1488802574D9A300AB2A9F /* WelcomeViewController.swift */,
 			);
 			path = HealthSheet;
 			sourceTree = "<group>";
@@ -475,6 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBBFA1F5256AA64400369892 /* ListPatientsViewController.swift in Sources */,
+				BB1488812574D9A300AB2A9F /* WelcomeViewController.swift in Sources */,
 				FA68C52E2569B94C009EC5FB /* NavMenuController.swift in Sources */,
 				BBBFA1FA256AB57300369892 /* MedicalsheetController.swift in Sources */,
 				FABFD0B22569AE7F009F1078 /* MenuController.swift in Sources */,
