@@ -4,6 +4,7 @@
 //
 //  Created by macbook on 21/11/2020.
 //
+
 import Alamofire
 import UIKit
 
@@ -21,11 +22,12 @@ class LoginController: UIViewController {
     @IBAction func loginAction(_ sender: Any) {
         
         let x = "x"
-        let rol = Role(nom: "Doctor")
+        let rol = Role(name: "Doctor")
         print("jkbcd")
-        let  u = User(username: usrp.text!,email: x, password: usrp.text!)
-
-        AF.request(serverUrl,
+        let roles = [rol]
+     //  let  u = User(username: usrp.text!,email: x, password: usrp.text!,role: roles)
+        var u = Userc( username: "x", password: "bouhmid")
+      AF.request(serverUrl,
                     method: .post,
                     parameters: u,
                     encoder: JSONParameterEncoder.default).response { response in
@@ -36,11 +38,14 @@ class LoginController: UIViewController {
                                  print("Validation Successful Hama")
                                 var dataString = NSString(data: response.data!, encoding:String.Encoding.utf8.rawValue)
                              var   dd = dataString! as String
+                                
  //                                let data = response.data
                               //   print(dd)
+                                
+                            
                                 self.performSegue(withIdentifier: "welcome", sender: dd)
-                             case let .failure(error):
-                                 print(error)
+                                case let .failure(error):
+                                print(error)
                              }
         
                     }}

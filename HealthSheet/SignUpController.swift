@@ -8,10 +8,16 @@ import Alamofire
 import UIKit
 
 class SignUpController: UIViewController {
-    let serverUrl = "http://192.168.1.47:3000/api/auth/signup"
+    let serverUrl = "http://192.168.1.32:3000/api/auth/signup"
 
     @IBAction func signup(_ sender: Any) {
-        var u = User(username: username.text ?? "x", email: email.text ?? "x", password: password.text ?? "x")
+        
+        let rol = Role(name: "Doctor")
+        print("jkbcd")
+        let roles = [rol]
+        
+      //  var u = User(username: username.text ?? "x", email: email.text ?? "x", password: password.text ?? "x", role:roles)
+        var u = Userc(username: username.text! , visites: [], roles: roles, listdp: [], _id: "", firstname: "", lastname: "", email: email.text!, password: password.text!, phonenum: "")
         AF.request(serverUrl,
                     method: .post,
                     parameters: u,

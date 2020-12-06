@@ -10,7 +10,7 @@ import UIKit
 class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var username: UITextField!
-    var dtaa = "dataaaa"
+    var dtaa = "gh"
     
     @IBOutlet weak var email: UITextField!
     override func viewDidLoad() {
