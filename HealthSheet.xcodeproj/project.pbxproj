@@ -17,6 +17,7 @@
 		BBF224BA257292110002257E /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF224B9257292110002257E /* ApiUtils.swift */; };
 		BBF224C0257294E90002257E /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF224BF257294E90002257E /* UserServices.swift */; };
 		C7B45973F58A477FFB6EF17B /* Pods_HealthSheetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850ED54C232C6E9C3A8C374A /* Pods_HealthSheetTests.framework */; };
+		FA5BD3B7257BC16E00764A8C /* SecendDocLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5BD3B6257BC16E00764A8C /* SecendDocLController.swift */; };
 		FA68C52E2569B94C009EC5FB /* NavMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68C52D2569B94C009EC5FB /* NavMenuController.swift */; };
 		FABFD0A32569AD94009F1078 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABFD0A22569AD94009F1078 /* LoginController.swift */; };
 		FABFD0A82569ADBD009F1078 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABFD0A72569ADBD009F1078 /* SignUpController.swift */; };
@@ -67,6 +68,7 @@
 		BBF224B9257292110002257E /* ApiUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
 		BBF224BF257294E90002257E /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
 		DE0E6E35C534600953AA04C9 /* Pods-HealthSheetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSheetTests.release.xcconfig"; path = "Target Support Files/Pods-HealthSheetTests/Pods-HealthSheetTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA5BD3B6257BC16E00764A8C /* SecendDocLController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecendDocLController.swift; sourceTree = "<group>"; };
 		FA68C52D2569B94C009EC5FB /* NavMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavMenuController.swift; sourceTree = "<group>"; };
 		FABFD0A22569AD94009F1078 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		FABFD0A72569ADBD009F1078 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			children = (
 				FABFD0AC2569AE24009F1078 /* DoctorsListController.swift */,
 				FABFD0B12569AE7F009F1078 /* MenuController.swift */,
+				FA5BD3B6257BC16E00764A8C /* SecendDocLController.swift */,
 			);
 			name = Patient;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				BBF224BA257292110002257E /* ApiUtils.swift in Sources */,
 				BBF224C0257294E90002257E /* UserServices.swift in Sources */,
 				FAD55AEE2562703200E4C01D /* SceneDelegate.swift in Sources */,
+				FA5BD3B7257BC16E00764A8C /* SecendDocLController.swift in Sources */,
 				FAD55AF62562703200E4C01D /* HealthSheet.xcdatamodeld in Sources */,
 				BBF224A125728AF60002257E /* User.swift in Sources */,
 				FABFD0A32569AD94009F1078 /* LoginController.swift in Sources */,

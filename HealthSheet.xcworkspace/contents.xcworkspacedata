@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:HealthSheet/DoctorsListController.swift">
+   </FileRef>
+   <FileRef
       location = "group:HealthSheet.xcodeproj">
    </FileRef>
    <FileRef
