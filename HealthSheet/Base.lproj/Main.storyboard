@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CHn-0u-l5y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fh6-Le-QXH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -416,6 +416,30 @@
             </objects>
             <point key="canvasLocation" x="789.85507246376812" y="758.70535714285711"/>
         </scene>
+        <!--Testget Img View Controller-->
+        <scene sceneID="5qg-4f-dqj">
+            <objects>
+                <viewController id="XLz-E0-YNo" customClass="TestgetImgViewController" customModule="HealthSheet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fr5-iR-i9p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eaB-lI-zsQ">
+                                <rect key="frame" x="87" y="269" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fb1-Ly-FJm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="img" destination="eaB-lI-zsQ" id="ciP-ej-gdL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A1J-FM-CD9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-749" y="1369"/>
+        </scene>
         <!--List Patients View Controller-->
         <scene sceneID="2GC-M7-wm1">
             <objects>
@@ -593,10 +617,10 @@
             </objects>
             <point key="canvasLocation" x="843.47826086956525" y="1440.4017857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Ordonnance View Controller-->
         <scene sceneID="dbi-81-fNg">
             <objects>
-                <viewController id="fh6-Le-QXH" sceneMemberID="viewController">
+                <viewController id="fh6-Le-QXH" customClass="OrdonnanceViewController" customModule="HealthSheet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B2y-ej-t86">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -630,6 +654,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="send:" destination="fh6-Le-QXH" eventType="touchUpInside" id="ueJ-D0-dUi"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Foulen ben foulen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xas-Bd-s6f">
                                 <rect key="frame" x="118" y="71" width="171" height="33"/>
@@ -642,10 +669,13 @@
                         <viewLayoutGuide key="safeArea" id="3BX-bO-IVV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="medicaments" destination="OEO-jy-g8r" id="5q0-RM-60m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A5x-zX-Rpe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1505.7971014492755" y="1447.7678571428571"/>
+            <point key="canvasLocation" x="1519" y="1446"/>
         </scene>
         <!--Pick Image View Controller-->
         <scene sceneID="CYR-e7-9Zn">
@@ -667,6 +697,14 @@
                                     <action selector="pickme:" destination="CHn-0u-l5y" eventType="touchUpInside" id="Udd-aQ-Z1R"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3g-70-SY6">
+                                <rect key="frame" x="232" y="44" width="182" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="upload"/>
+                                <connections>
+                                    <action selector="uploadaction:" destination="CHn-0u-l5y" eventType="touchUpInside" id="DLm-Jk-Xab"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TTY-EV-q7e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -674,6 +712,7 @@
                     <connections>
                         <outlet property="UIPickerr" destination="P8g-X6-p7l" id="izd-5G-ZRa"/>
                         <outlet property="picture" destination="Kp0-22-bdf" id="FOB-mU-zP0"/>
+                        <outlet property="upload" destination="w3g-70-SY6" id="wZR-C6-K4Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9mM-YS-FIB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

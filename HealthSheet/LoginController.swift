@@ -35,7 +35,7 @@ class LoginController: UIViewController {
  //                    debugPrint(response)
                      switch response.result {
                              case .success:
-                                 print("Validation Successful beautiful girl")
+                                 print("Validation Successful Hama")
                                 var dataString = NSString(data: response.data!, encoding:String.Encoding.utf8.rawValue)
                              var   dd = dataString! as String
                                 

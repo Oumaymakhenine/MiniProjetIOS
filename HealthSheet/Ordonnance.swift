@@ -7,8 +7,8 @@
 
 import Foundation
 class Ordonnance : Codable{
-    internal init(_id: String, medicaments: String) {
-        self._id = _id
+    internal init( medicaments: String) {
+        self._id = ""
         self.medicaments = medicaments
     }
     

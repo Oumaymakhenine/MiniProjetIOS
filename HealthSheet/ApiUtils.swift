@@ -10,5 +10,5 @@ import Foundation
 struct ApiUtis {
     
 
-let Path : String = "http://192.168.43.11:3000/api/auth/" ;
+static let Path : String = "http://192.168.43.111:3000/api/auth/" ;
 }
