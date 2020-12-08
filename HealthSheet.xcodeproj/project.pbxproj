@@ -26,6 +26,10 @@
 		BBF224C0257294E90002257E /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF224BF257294E90002257E /* UserServices.swift */; };
 		C7B45973F58A477FFB6EF17B /* Pods_HealthSheetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 850ED54C232C6E9C3A8C374A /* Pods_HealthSheetTests.framework */; };
 		FA68C52E2569B94C009EC5FB /* NavMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68C52D2569B94C009EC5FB /* NavMenuController.swift */; };
+		FAB344E7257F57AC001B6E7B /* tableDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB344E6257F57AC001B6E7B /* tableDoc.swift */; };
+		FAB344F4257F5D6F001B6E7B /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB344F3257F5D6F001B6E7B /* testViewController.swift */; };
+		FAB344F9257F5DAC001B6E7B /* testdocViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB344F8257F5DAC001B6E7B /* testdocViewController.swift */; };
+		FAB3450E257F67DB001B6E7B /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB3450D257F67DB001B6E7B /* AccountController.swift */; };
 		FABFD0A32569AD94009F1078 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABFD0A22569AD94009F1078 /* LoginController.swift */; };
 		FABFD0A82569ADBD009F1078 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABFD0A72569ADBD009F1078 /* SignUpController.swift */; };
 		FABFD0AD2569AE24009F1078 /* DoctorsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABFD0AC2569AE24009F1078 /* DoctorsListController.swift */; };
@@ -84,6 +88,10 @@
 		BBF224BF257294E90002257E /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
 		DE0E6E35C534600953AA04C9 /* Pods-HealthSheetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSheetTests.release.xcconfig"; path = "Target Support Files/Pods-HealthSheetTests/Pods-HealthSheetTests.release.xcconfig"; sourceTree = "<group>"; };
 		FA68C52D2569B94C009EC5FB /* NavMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavMenuController.swift; sourceTree = "<group>"; };
+		FAB344E6257F57AC001B6E7B /* tableDoc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableDoc.swift; sourceTree = "<group>"; };
+		FAB344F3257F5D6F001B6E7B /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
+		FAB344F8257F5DAC001B6E7B /* testdocViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testdocViewController.swift; sourceTree = "<group>"; };
+		FAB3450D257F67DB001B6E7B /* AccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountController.swift; sourceTree = "<group>"; };
 		FABFD0A22569AD94009F1078 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		FABFD0A72569ADBD009F1078 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		FABFD0AC2569AE24009F1078 /* DoctorsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsListController.swift; sourceTree = "<group>"; };
@@ -159,8 +167,14 @@
 		BB84A019257D6A8900A56ED2 /* Patient */ = {
 			isa = PBXGroup;
 			children = (
+				FABFD0AC2569AE24009F1078 /* DoctorsListController.swift */,
+				FABFD0B12569AE7F009F1078 /* MenuController.swift */,
 				BB84A01A257D6AAC00A56ED2 /* PickImageViewController.swift */,
 				BB5E9527257E33190054F041 /* TestgetImgViewController.swift */,
+				FAB344E6257F57AC001B6E7B /* tableDoc.swift */,
+				FAB344F3257F5D6F001B6E7B /* testViewController.swift */,
+				FAB344F8257F5DAC001B6E7B /* testdocViewController.swift */,
+				FAB3450D257F67DB001B6E7B /* AccountController.swift */,
 			);
 			name = Patient;
 			sourceTree = "<group>";
@@ -239,9 +253,7 @@
 				FAD55AEF2562703200E4C01D /* ViewController.swift */,
 				FABFD0A72569ADBD009F1078 /* SignUpController.swift */,
 				FABFD0A22569AD94009F1078 /* LoginController.swift */,
-				FABFD0B12569AE7F009F1078 /* MenuController.swift */,
 				FA68C52D2569B94C009EC5FB /* NavMenuController.swift */,
-				FABFD0AC2569AE24009F1078 /* DoctorsListController.swift */,
 				FAD55AF12562703200E4C01D /* Main.storyboard */,
 				FAD55AF72562703500E4C01D /* Assets.xcassets */,
 				FAD55AF92562703500E4C01D /* LaunchScreen.storyboard */,
@@ -513,11 +525,15 @@
 				BB1488812574D9A300AB2A9F /* WelcomeViewController.swift in Sources */,
 				FA68C52E2569B94C009EC5FB /* NavMenuController.swift in Sources */,
 				BB5E9523257E24230054F041 /* OrdonnanceViewController.swift in Sources */,
+				FAB344F9257F5DAC001B6E7B /* testdocViewController.swift in Sources */,
+				FAB344E7257F57AC001B6E7B /* tableDoc.swift in Sources */,
 				BBBFA1FA256AB57300369892 /* MedicalsheetController.swift in Sources */,
+				FAB3450E257F67DB001B6E7B /* AccountController.swift in Sources */,
 				FABFD0B22569AE7F009F1078 /* MenuController.swift in Sources */,
 				FAD55AF02562703200E4C01D /* ViewController.swift in Sources */,
 				BB68472D257CDAE300EC8F87 /* Ordonnance.swift in Sources */,
 				BB84A01B257D6AAC00A56ED2 /* PickImageViewController.swift in Sources */,
+				FAB344F4257F5D6F001B6E7B /* testViewController.swift in Sources */,
 				FAD55AEC2562703200E4C01D /* AppDelegate.swift in Sources */,
 				BB6E4603257BCB57002868CC /* Userc.swift in Sources */,
 				BBF224BA257292110002257E /* ApiUtils.swift in Sources */,
