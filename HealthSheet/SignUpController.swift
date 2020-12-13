@@ -8,7 +8,7 @@ import Alamofire
 import UIKit
 
 class SignUpController: UIViewController {
-    let serverUrl = "http://192.168.1.32:3000/api/auth/signup"
+    let serverUrl = "http://192.168.1.44:3000/api/auth/signup"
 
     @IBAction func signup(_ sender: Any) {
         

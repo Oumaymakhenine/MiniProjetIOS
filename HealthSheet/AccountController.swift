@@ -14,14 +14,17 @@ class AccountController: UIViewController {
     @IBOutlet weak var fn: UITextField!
     @IBOutlet weak var username: UILabel!
     
-    let serverUrl = "http://192.168.1.41:3000/api/auth/updateuser"
+
+    let serverUrl = "http://192.168.1.55:3000/api/auth/updateuser"
+
+
 
     
     @IBAction func upd(_ sender: Any) {
         
-      var  u = Userc(username: username.text as!String, password: "a")
-        u.firstname = fn.text as! String
-        u.lastname = ln.text as! String
+        var u = Userc( username: "x", password: "a")
+         //= fn.text as! String
+        // = ln.text as! String
         u.email = email.text as! String
         
         AF.request(serverUrl,
@@ -31,11 +34,18 @@ class AccountController: UIViewController {
    //                    response in
    //                    debugPrint(response)
                        switch response.result {
-                       case .success:     print("Validation Successful Hama")
-                        var dataString = NSString(data: response.data!, encoding:String.Encoding.utf8.rawValue)
-                     var   dd = dataString! as String
 
-                        print(dd)
+                       
+                       case .success:
+                        
+                        print("Validation Successful Hama")
+                       var dataString = NSString(data: response.data!, encoding:String.Encoding.utf8.rawValue)
+                    var   dd = dataString! as String
+                       
+//                                let data = response.data
+                      print(dd)
+                              
+
                                   //self.performSegue(withIdentifier: "welcome", sender: dd)
                                   case let .failure(error):
                                   print(error)
@@ -45,7 +55,6 @@ class AccountController: UIViewController {
     }
 
     @IBOutlet weak var update: UIButton!
-    var dtaa = "oumayma"
     override func viewDidLoad() {
         super.viewDidLoad()
         

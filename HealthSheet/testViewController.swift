@@ -12,10 +12,10 @@ class testViewController: UIViewController ,UITableViewDataSource,UITableViewDel
     
     var dtaa = "b"
     var tableData = [
-        (title:"oumayma", subtitle: "khenine"),
-        (title:"nadia", subtitle: "chikh"),
-        (title:"hama", subtitle: "hama"),
-        (title:"bechir", subtitle: "bechir"),
+        (title:"oumayma khenine", subtitle: "khenine"),
+        (title:"nadia chikh", subtitle: "chikh"),
+        (title:"hama trabelsi", subtitle: "hama"),
+        (title:"bechir chourabi", subtitle: "bechir"),
        
     ]
 

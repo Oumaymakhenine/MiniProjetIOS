@@ -1,13 +1,13 @@
 //
-//  MedicalsheetController.swift
+//  AboutPatientController.swift
 //  HealthSheet
 //
-//  Created by Hama on 11/22/20.
-
+//  Created by macbook on 13/12/2020.
+//
 
 import UIKit
 
-class MedicalsheetController: UIViewController {
+class AboutPatientController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

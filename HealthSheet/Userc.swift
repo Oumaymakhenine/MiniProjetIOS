@@ -2,7 +2,6 @@
 //  Userc.swift
 //  HealthSheet
 //
-//  Created by Hama on 12/5/20.
 //
 
 import Foundation
