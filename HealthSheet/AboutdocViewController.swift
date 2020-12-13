@@ -7,7 +7,7 @@
 
 import UIKit
 
-class testdocViewController: UIViewController {
+class AboutdocViewController: UIViewController {
     @IBOutlet weak var fifi: UITextField!
     
     @IBOutlet weak var RaringDoc: UIStackView!
