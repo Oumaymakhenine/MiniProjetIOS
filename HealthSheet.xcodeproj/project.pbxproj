@@ -46,6 +46,7 @@
 		FAD55B062562703500E4C01D /* HealthSheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD55B052562703500E4C01D /* HealthSheetTests.swift */; };
 		FAD55B112562703500E4C01D /* HealthSheetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD55B102562703500E4C01D /* HealthSheetUITests.swift */; };
 		FADAA05025864D7A0093AC1D /* AboutPatientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAA04F25864D7A0093AC1D /* AboutPatientController.swift */; };
+		FADAA05D258654860093AC1D /* AboutDoctorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAA05C258654860093AC1D /* AboutDoctorController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		FAD55B102562703500E4C01D /* HealthSheetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthSheetUITests.swift; sourceTree = "<group>"; };
 		FAD55B122562703500E4C01D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FADAA04F25864D7A0093AC1D /* AboutPatientController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPatientController.swift; sourceTree = "<group>"; };
+		FADAA05C258654860093AC1D /* AboutDoctorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDoctorController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			children = (
 				BBBFA1F4256AA64400369892 /* ListPatientsViewController.swift */,
 				BBBFA1F9256AB57300369892 /* MedicalsheetController.swift */,
+				FADAA05C258654860093AC1D /* AboutDoctorController.swift */,
 			);
 			name = Doctor;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADAA05D258654860093AC1D /* AboutDoctorController.swift in Sources */,
 				BBBFA1F5256AA64400369892 /* ListPatientsViewController.swift in Sources */,
 				BB1488812574D9A300AB2A9F /* WelcomeViewController.swift in Sources */,
 				FA68C52E2569B94C009EC5FB /* NavMenuController.swift in Sources */,

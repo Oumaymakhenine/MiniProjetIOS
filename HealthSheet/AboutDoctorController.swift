@@ -1,5 +1,5 @@
 //
-//  AboutPatientController.swift
+//  AboutDoctorController.swift
 //  HealthSheet
 //
 //  Created by macbook on 13/12/2020.
@@ -7,10 +7,8 @@
 
 import UIKit
 
-class AboutPatientController: UIViewController {
+class AboutDoctorController: UIViewController {
 
-    @IBOutlet weak var ImageDoc: UIImageView!
-    @IBOutlet weak var Description: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
