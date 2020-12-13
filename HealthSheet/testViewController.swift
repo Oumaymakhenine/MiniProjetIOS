@@ -9,6 +9,8 @@ import UIKit
 
 class testViewController: UIViewController ,UITableViewDataSource,UITableViewDelegate{
     let cellReuseIdentifier = "ReusableTableCell"
+    
+    var dtaa = "b"
     var tableData = [
         (title:"oumayma", subtitle: "khenine"),
         (title:"nadia", subtitle: "chikh"),
@@ -19,7 +21,19 @@ class testViewController: UIViewController ,UITableViewDataSource,UITableViewDel
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let jsonData = Data(dtaa.utf8)
 
+        
+        let decoder = JSONDecoder()
+
+        do {
+            let people = try decoder.decode(Userc.self, from: jsonData)
+            print(people.listofdp[0].username)
+            //print(people.listdp[0].username)
+          //  print(people.description)
+        } catch {
+            print(error.localizedDescription)
+        }
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         self.navigationItem.rightBarButtonItem = self.editButtonItem
     }

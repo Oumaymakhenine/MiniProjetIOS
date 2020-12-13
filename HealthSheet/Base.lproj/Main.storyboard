@@ -153,7 +153,7 @@
                                 <color key="textColor" red="0.053686587510000001" green="0.32578887150000002" blue="0.91788388279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="a" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5w-Ds-kcN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5w-Ds-kcN">
                                 <rect key="frame" x="101" y="134" width="206" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -402,7 +402,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginAction:" destination="B7v-cx-mIC" eventType="touchUpInside" id="JWo-K8-plY"/>
-                                    <segue destination="tEl-H3-cuZ" kind="show" identifier="welcome" id="eSV-Q8-mDH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrY-WC-Nee">
@@ -433,7 +432,7 @@
                     <connections>
                         <outlet property="usrn" destination="Vsn-C7-M6t" id="ID3-ZI-4wC"/>
                         <outlet property="usrp" destination="uu2-4E-eWz" id="qd0-Pd-avO"/>
-                        <segue destination="Jxz-GY-Y3e" kind="show" identifier="data" id="MK0-AJ-hgl"/>
+                        <segue destination="J4B-2j-Wrs" kind="show" identifier="first" id="8gr-jv-5rt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oq0-xG-Nvq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -445,11 +444,11 @@
             <objects>
                 <viewController id="tEl-H3-cuZ" customClass="WelcomeViewController" customModule="HealthSheet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Da-14-vCG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="63U-HH-Vqa">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="    Email Adress" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fiw-pK-noP">
@@ -508,12 +507,28 @@
             </objects>
             <point key="canvasLocation" x="1592.753623188406" y="-614.0625"/>
         </scene>
+        <!--First View Controller-->
+        <scene sceneID="e1m-QF-bnF">
+            <objects>
+                <viewController id="J4B-2j-Wrs" customClass="FirstViewController" customModule="HealthSheet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wc4-dd-l2X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="CeM-Xa-Vpw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CHv-qP-Wve"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tvu-FK-Taa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2629" y="-559"/>
+        </scene>
         <!--Sign Up Controller-->
         <scene sceneID="JqG-dM-Y4P">
             <objects>
                 <viewController id="Jxz-GY-Y3e" customClass="SignUpController" customModule="HealthSheet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JhE-XA-iVH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="    Email Adress" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p4r-L9-qP1">
@@ -938,6 +953,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MtA-9c-emP" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="L3f-Ff-Nuw"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rdl-pq-4SE">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

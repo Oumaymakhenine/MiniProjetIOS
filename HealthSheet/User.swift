@@ -8,13 +8,14 @@
 import Foundation
 
 struct User:Codable {
-    static var us = User(username: "x", firstName: "s", lastName: "s", email: "s", password: "s", role: [Role(name: "Doctor")])
+   // static var us = User(username: "x", firstName: "s", lastName: "s", email: "s", password: "s", role: [Role(name: "Doctor")], lst: <#[String]#>)
    // static var us = "hama"
    var username:String
-   var firstName:String
-    var lastName:String
+   var firstname:String
+    var lastname:String
     var email:String
-    var password:String
-   var role:[Role]
+    //var password:String
+   //var role:[Role]
+    //var lst:[String]
 
 }

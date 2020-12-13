@@ -11,7 +11,7 @@ class Userc : Codable{
         self.username = username
         self.visites = visites
         self.roles = roles
-        self.listdp = listdp
+        self.listofdp = listdp
         self._id = _id
         self.firstname = firstname
         self.lastname = lastname
@@ -24,7 +24,7 @@ class Userc : Codable{
         self.username = username
         self.visites =  []
         self.roles = []
-        self.listdp = []
+        self.listofdp = []
         self._id = ""
         self.firstname = ""
         self.lastname = ""
@@ -39,7 +39,7 @@ class Userc : Codable{
     var username:String
     var visites:[Visite]
     var roles:[Role]
-    var listdp:[Userc]
+    var listofdp:[Userc]
     var _id:String
     var firstname:String
     var lastname:String

@@ -9,12 +9,12 @@ import Alamofire
 import UIKit
 
 class LoginController: UIViewController {
-    let serverUrl = "http://172.19.75.221:3000/api/auth/signin"
+    let serverUrl = "http://192.168.1.37:3000/api/auth/signin"
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         var dta = sender as! String
-        let dest = segue.destination as! WelcomeViewController
-        dest.dtaa = dta
+        let dest = segue.destination as! FirstViewController
+        FirstViewController.dtaa = dta
     }
 
     
@@ -26,7 +26,7 @@ class LoginController: UIViewController {
         print("jkbcd")
         let roles = [rol]
      //  let  u = User(username: usrp.text!,email: x, password: usrp.text!,role: roles)
-        var u = Userc( username: "x", password: "bouhmid")
+        var u = Userc( username: usrn.text!, password: usrp.text!)
       AF.request(serverUrl,
                     method: .post,
                     parameters: u,
@@ -43,7 +43,7 @@ class LoginController: UIViewController {
                               //   print(dd)
                                 
                             
-                                self.performSegue(withIdentifier: "welcome", sender: dd)
+                               self.performSegue(withIdentifier: "first", sender: dd)
                                 case let .failure(error):
                                 print(error)
                              }

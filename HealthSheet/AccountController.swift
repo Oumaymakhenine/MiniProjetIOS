@@ -14,7 +14,7 @@ class AccountController: UIViewController {
     @IBOutlet weak var fn: UITextField!
     @IBOutlet weak var username: UILabel!
     
-    let serverUrl = "http://192.168.1.49:3000/api/auth/updateuser"
+    let serverUrl = "http://192.168.1.41:3000/api/auth/updateuser"
 
     
     @IBAction func upd(_ sender: Any) {
@@ -31,9 +31,11 @@ class AccountController: UIViewController {
    //                    response in
    //                    debugPrint(response)
                        switch response.result {
-                       case .success: break
+                       case .success:     print("Validation Successful Hama")
+                        var dataString = NSString(data: response.data!, encoding:String.Encoding.utf8.rawValue)
+                     var   dd = dataString! as String
 
-                              
+                        print(dd)
                                   //self.performSegue(withIdentifier: "welcome", sender: dd)
                                   case let .failure(error):
                                   print(error)
