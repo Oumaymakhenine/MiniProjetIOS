@@ -15,7 +15,7 @@ class AccountController: UIViewController {
     @IBOutlet weak var username: UILabel!
     
 
-    let serverUrl = "http://192.168.1.55:3000/api/auth/updateuser"
+    let serverUrl = "http://172.16.123.25:3000/api/auth/updateuser"
 
 
 

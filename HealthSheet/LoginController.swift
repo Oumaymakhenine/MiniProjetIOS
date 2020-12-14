@@ -10,7 +10,7 @@ import UIKit
 
 class LoginController: UIViewController {
 
-    let serverUrl = "http://192.168.1.37:3000/api/auth/signin"
+    let serverUrl = "http://172.16.123.25:3000/api/auth/signin"
     
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         var dta = sender as! String

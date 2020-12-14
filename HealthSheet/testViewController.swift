@@ -6,10 +6,15 @@
 //
 
 import UIKit
-
+import Alamofire
 class testViewController: UIViewController ,UITableViewDataSource,UITableViewDelegate{
-    let cellReuseIdentifier = "ReusableTableCell"
+   
+     let serverUrl = "http://172.16.123.25:3000/api/auth/getuser"
+
     
+    @IBOutlet weak var menub: UIBarButtonItem!
+    let cellReuseIdentifier = "ReusableTableCell"
+    var hama:[String] = []
     var dtaa = "b"
     var tableData = [
         (title:"oumayma khenine", subtitle: "khenine"),
@@ -27,10 +32,12 @@ class testViewController: UIViewController ,UITableViewDataSource,UITableViewDel
         let decoder = JSONDecoder()
 
         do {
-            let people = try decoder.decode(Userc.self, from: jsonData)
-            print(people.listofdp[0].username)
+            let people = try decoder.decode(Testuser.self, from: jsonData)
+            //print(people.listofdp[0].username)
             //print(people.listdp[0].username)
           //  print(people.description)
+           // let hama = people.listofdp
+            
         } catch {
             print(error.localizedDescription)
         }
@@ -45,22 +52,21 @@ class testViewController: UIViewController ,UITableViewDataSource,UITableViewDel
     }
 
  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableData.count
+    
+        return hama.count
     }
 
  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath)
         let row = indexPath.row
         
-        cell.textLabel?.text = tableData[row].title
-        cell.detailTextLabel?.text = tableData[row].subtitle
+        cell.textLabel?.text = hama[row]
+        cell.detailTextLabel?.text = hama[row]
         
         return cell
     }
 
-    // Override to support conditional editing of the table view.
    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
         return true
     }
     
@@ -70,21 +76,56 @@ class testViewController: UIViewController ,UITableViewDataSource,UITableViewDel
  func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data
-            tableData.remove(at: indexPath.row)
+            hama.remove(at: indexPath.row)
             // Delete the row from the table itself
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
-  
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        var u = User(username: hama[indexPath.row], firstname: "d", lastname: "d", email: "d")
+         AF.request(serverUrl,
+                       method: .post,
+                       parameters: u,
+                       encoder: JSONParameterEncoder.default).response { response in
+     //                    response in
+     //                    debugPrint(response)
+                        switch response.result {
+                                case .success:
+                                    print("Validation Successful Hama")
+                                   var dataString = NSString(data: response.data!, encoding:String.Encoding.utf8.rawValue)
+                                var   dd = dataString! as String
+                                 print(dd)
+                                let jsonData = Data(dd.utf8)
+                                 let decoder = JSONDecoder()
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+                                 do {
+                                     u  = try decoder.decode(User.self, from: jsonData)
+                                     print("ye rabii" + u.email)
+                                    self.performSegue(withIdentifier: "ab", sender: u)
+                                         //return us
+                                     } catch {
+                                     print(error)
+                                 }
+     //
+                               
+                                   case let .failure(error):
+                                   print(error)
+                                }
+                       }
     }
-    */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+        let d = sender as! User
+        let dd = segue.destination as! AboutdocViewController
+      //  let d = hama[index]
+        
+        dd.us = d
+    
+     
+    }
+  
 
 }

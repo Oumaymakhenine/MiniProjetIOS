@@ -10,6 +10,8 @@
 		07CD3A88E60781FF06A7F2D3 /* Pods_HealthSheet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6D728720CCFD7FFAF1E325 /* Pods_HealthSheet.framework */; };
 		29A11EC14D33C1551B64AC59 /* Pods_HealthSheet_HealthSheetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D46FA5EB4B5501220F1F2ED /* Pods_HealthSheet_HealthSheetUITests.framework */; };
 		BB1488812574D9A300AB2A9F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1488802574D9A300AB2A9F /* WelcomeViewController.swift */; };
+		BB1ACC172587BBBB0064E838 /* SideMenuPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1ACC162587BBBB0064E838 /* SideMenuPViewController.swift */; };
+		BB1ACC1D2587C2A40064E838 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1ACC1C2587C2A40064E838 /* SWRevealViewController.m */; };
 		BB51165E2584E13900AA6D40 /* Testuser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB51165D2584E13900AA6D40 /* Testuser.swift */; };
 		BB5E9523257E24230054F041 /* OrdonnanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5E9522257E24230054F041 /* OrdonnanceViewController.swift */; };
 		BB5E9528257E33190054F041 /* TestgetImgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5E9527257E33190054F041 /* TestgetImgViewController.swift */; };
@@ -34,7 +36,6 @@
 		FAB3450E257F67DB001B6E7B /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB3450D257F67DB001B6E7B /* AccountController.swift */; };
 		FABFD0A32569AD94009F1078 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABFD0A22569AD94009F1078 /* LoginController.swift */; };
 		FABFD0A82569ADBD009F1078 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABFD0A72569ADBD009F1078 /* SignUpController.swift */; };
-		FABFD0AD2569AE24009F1078 /* DoctorsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABFD0AC2569AE24009F1078 /* DoctorsListController.swift */; };
 		FABFD0B22569AE7F009F1078 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABFD0B12569AE7F009F1078 /* MenuController.swift */; };
 		FAD55AEC2562703200E4C01D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD55AEB2562703200E4C01D /* AppDelegate.swift */; };
 		FAD55AEE2562703200E4C01D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD55AED2562703200E4C01D /* SceneDelegate.swift */; };
@@ -78,6 +79,11 @@
 		90C6F021186FDA8DA0E60373 /* Pods-HealthSheet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthSheet.release.xcconfig"; path = "Target Support Files/Pods-HealthSheet/Pods-HealthSheet.release.xcconfig"; sourceTree = "<group>"; };
 		AE6D728720CCFD7FFAF1E325 /* Pods_HealthSheet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthSheet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB1488802574D9A300AB2A9F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = Assets.xcassets/WelcomeViewController.swift; sourceTree = "<group>"; };
+		BB1ACC162587BBBB0064E838 /* SideMenuPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuPViewController.swift; sourceTree = "<group>"; };
+		BB1ACC1B2587C2A30064E838 /* HealthSheet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HealthSheet-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB1ACC1C2587C2A40064E838 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ../../../../Downloads/SWRevealViewController.m; sourceTree = "<group>"; };
+		BB1ACC212587C2B00064E838 /* SideMenuView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SideMenuView-Bridging-Header.h"; path = "../../../../Downloads/SideMenuView/SideMenuView/SideMenuView-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB1ACC352587C4740064E838 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ../../../../Downloads/SWRevealViewController.h; sourceTree = "<group>"; };
 		BB51165D2584E13900AA6D40 /* Testuser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testuser.swift; sourceTree = "<group>"; };
 		BB5E9522257E24230054F041 /* OrdonnanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdonnanceViewController.swift; sourceTree = "<group>"; };
 		BB5E9527257E33190054F041 /* TestgetImgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestgetImgViewController.swift; sourceTree = "<group>"; };
@@ -102,7 +108,6 @@
 		FAB3450D257F67DB001B6E7B /* AccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountController.swift; sourceTree = "<group>"; };
 		FABFD0A22569AD94009F1078 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		FABFD0A72569ADBD009F1078 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
-		FABFD0AC2569AE24009F1078 /* DoctorsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsListController.swift; sourceTree = "<group>"; };
 		FABFD0B12569AE7F009F1078 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		FAD55AE82562703200E4C01D /* HealthSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD55AEB2562703200E4C01D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -179,7 +184,6 @@
 		BB84A019257D6A8900A56ED2 /* Patient */ = {
 			isa = PBXGroup;
 			children = (
-				FABFD0AC2569AE24009F1078 /* DoctorsListController.swift */,
 				FABFD0B12569AE7F009F1078 /* MenuController.swift */,
 				BB84A01A257D6AAC00A56ED2 /* PickImageViewController.swift */,
 				BB5E9527257E33190054F041 /* TestgetImgViewController.swift */,
@@ -188,6 +192,7 @@
 				FAB344F8257F5DAC001B6E7B /* AboutdocViewController.swift */,
 				FAB3450D257F67DB001B6E7B /* AccountController.swift */,
 				FADAA06F258666720093AC1D /* PatientAboutViewController.swift */,
+				BB1ACC162587BBBB0064E838 /* SideMenuPViewController.swift */,
 			);
 			name = Patient;
 			sourceTree = "<group>";
@@ -271,7 +276,10 @@
 				FABFD0A72569ADBD009F1078 /* SignUpController.swift */,
 				FABFD0A22569AD94009F1078 /* LoginController.swift */,
 				FA68C52D2569B94C009EC5FB /* NavMenuController.swift */,
+				BB1ACC212587C2B00064E838 /* SideMenuView-Bridging-Header.h */,
 				FAD55AF12562703200E4C01D /* Main.storyboard */,
+				BB1ACC1C2587C2A40064E838 /* SWRevealViewController.m */,
+				BB1ACC352587C4740064E838 /* SWRevealViewController.h */,
 				FAD55AF72562703500E4C01D /* Assets.xcassets */,
 				FAD55AF92562703500E4C01D /* LaunchScreen.storyboard */,
 				FAD55AFC2562703500E4C01D /* Info.plist */,
@@ -279,6 +287,7 @@
 				BB1488802574D9A300AB2A9F /* WelcomeViewController.swift */,
 				BB5E9522257E24230054F041 /* OrdonnanceViewController.swift */,
 				BB6E40C1257F9EFA008636AB /* FirstViewController.swift */,
+				BB1ACC1B2587C2A30064E838 /* HealthSheet-Bridging-Header.h */,
 			);
 			path = HealthSheet;
 			sourceTree = "<group>";
@@ -373,6 +382,7 @@
 				TargetAttributes = {
 					FAD55AE72562703200E4C01D = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					FAD55B002562703500E4C01D = {
 						CreatedOnToolsVersion = 12.2;
@@ -546,8 +556,10 @@
 				FA68C52E2569B94C009EC5FB /* NavMenuController.swift in Sources */,
 				BB5E9523257E24230054F041 /* OrdonnanceViewController.swift in Sources */,
 				FAB344F9257F5DAC001B6E7B /* AboutdocViewController.swift in Sources */,
+				BB1ACC1D2587C2A40064E838 /* SWRevealViewController.m in Sources */,
 				FAB344E7257F57AC001B6E7B /* tableDoc.swift in Sources */,
 				BBBFA1FA256AB57300369892 /* MedicalsheetController.swift in Sources */,
+				BB1ACC172587BBBB0064E838 /* SideMenuPViewController.swift in Sources */,
 				FAB3450E257F67DB001B6E7B /* AccountController.swift in Sources */,
 				FABFD0B22569AE7F009F1078 /* MenuController.swift in Sources */,
 				FAD55AF02562703200E4C01D /* ViewController.swift in Sources */,
@@ -567,7 +579,6 @@
 				BBF224A125728AF60002257E /* User.swift in Sources */,
 				FABFD0A32569AD94009F1078 /* LoginController.swift in Sources */,
 				BBF224A925728E490002257E /* Role.swift in Sources */,
-				FABFD0AD2569AE24009F1078 /* DoctorsListController.swift in Sources */,
 				FADAA07825866EEF0093AC1D /* ListPViewController.swift in Sources */,
 				FADAA070258666720093AC1D /* PatientAboutViewController.swift in Sources */,
 				BB68473C257CDD2B00EC8F87 /* Analyse.swift in Sources */,
@@ -749,6 +760,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HealthSheet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -757,6 +769,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = oum.HealthSheet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HealthSheet/HealthSheet-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -768,6 +782,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HealthSheet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -776,6 +791,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = oum.HealthSheet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HealthSheet/HealthSheet-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

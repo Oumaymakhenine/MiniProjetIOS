@@ -11,7 +11,7 @@ import Foundation
 
 class UserServices {
     
-   static let serverUrl = "http://192.168.1.37:3000/api/auth/getuser"
+   static let serverUrl = "http://192.168.5.172:3000/api/auth/getuser"
 
 static func getUser(u:User) -> User {
    var us = User(username: "d", firstname: "d", lastname: "d", email: "d")
@@ -43,7 +43,7 @@ static func getUser(u:User) -> User {
                               print(error)
                            }
                   }
-    print("hhh"+us.email)
+    //print("hhh"+us.email)
 return us
     }
 }
