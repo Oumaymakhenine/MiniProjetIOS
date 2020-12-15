@@ -12,7 +12,7 @@ class testViewController: UIViewController ,UITableViewDataSource,UITableViewDel
      let serverUrl = "http://172.16.123.25:3000/api/auth/getuser"
 
     
-    @IBOutlet weak var menub: UIBarButtonItem!
+    
     let cellReuseIdentifier = "ReusableTableCell"
     var hama:[String] = []
     var dtaa = "b"
@@ -93,7 +93,7 @@ class testViewController: UIViewController ,UITableViewDataSource,UITableViewDel
      //                    debugPrint(response)
                         switch response.result {
                                 case .success:
-                                    print("Validation Successful Hama")
+                                    print("Validation Successful ")
                                    var dataString = NSString(data: response.data!, encoding:String.Encoding.utf8.rawValue)
                                 var   dd = dataString! as String
                                  print(dd)

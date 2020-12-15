@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B7v-cx-mIC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g0H-ga-oLo">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -42,7 +41,7 @@
             <objects>
                 <viewController id="KBT-vQ-Z4q" customClass="AboutdocViewController" customModule="HealthSheet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jfI-rg-EZv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_3058" translatesAutoresizingMaskIntoConstraints="NO" id="Pjb-5u-mGD">
@@ -354,7 +353,7 @@
             <objects>
                 <viewController id="nUG-8k-uFQ" customClass="testViewController" customModule="HealthSheet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="42F-aE-nhA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZR4-z8-Vm8">
@@ -399,26 +398,6 @@
             </objects>
             <point key="canvasLocation" x="268.1159420289855" y="304.6875"/>
         </scene>
-        <!--Reveal View Controller-->
-        <scene sceneID="d4z-h5-Gnz">
-            <objects>
-                <viewController id="2vd-L9-RMK" customClass="SWRevealViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mpt-hb-ugD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="4Vu-tn-nXW"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="g1U-8t-s48"/>
-                    <connections>
-                        <segue destination="LeT-0v-KkM" kind="custom" customClass="SWRevealViewControllerSegueSetController" id="JsB-wi-Y2o"/>
-                        <segue destination="d1b-VC-xCB" kind="custom" identifier="docbl" customClass="SWRevealViewControllerSegueSetController" id="HIM-Fy-GBd"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fZB-5X-R3R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="42" y="-1385"/>
-        </scene>
         <!--Menu Controller-->
         <scene sceneID="lvo-iE-G89">
             <objects>
@@ -430,7 +409,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="x7s-c0-pMr">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" springLoaded="YES" id="CpJ-6z-1M8">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" image="line.horizontal.3" catalog="system" springLoaded="YES" id="CpJ-6z-1M8">
                             <color key="tintColor" red="0.057973429860000002" green="0.041820139389999997" blue="0.82681471049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <action selector="didTapMenu" destination="OrG-WU-Ad4" id="XhP-6f-7th"/>
@@ -441,39 +420,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nyi-gB-ER1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1278" y="-552"/>
-        </scene>
-        <!--SideMenuP-->
-        <scene sceneID="2gn-OM-mON">
-            <objects>
-                <viewController title="SideMenuP" id="cO8-F3-dG3" customClass="SideMenuPViewController" customModule="HealthSheet" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="EbV-z7-cJq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BC8-zo-H2D">
-                                <rect key="frame" x="20" y="283" width="206" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
-                                <state key="normal" title="Doctors">
-                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnDoctrs:" destination="cO8-F3-dG3" eventType="touchUpInside" id="7zj-SV-dP9"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="YLH-GV-rAo"/>
-                        <color key="backgroundColor" red="0.077724120399376595" green="0.71894049415725592" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="tintColor" name="AccentColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="eof-yw-9AL"/>
-                    <connections>
-                        <segue destination="d1b-VC-xCB" kind="custom" identifier="doclistes" customClass="SWRevealViewControllerSeguePushController" id="M9K-Je-4gx"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gdA-Si-dR2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="579.71014492753625" y="-589.28571428571422"/>
         </scene>
         <!--Login Controller-->
         <scene sceneID="TMo-Fh-YEv">
@@ -539,7 +485,6 @@
                         <outlet property="usrn" destination="Vsn-C7-M6t" id="ID3-ZI-4wC"/>
                         <outlet property="usrp" destination="uu2-4E-eWz" id="qd0-Pd-avO"/>
                         <segue destination="J4B-2j-Wrs" kind="show" identifier="first" id="8gr-jv-5rt"/>
-                        <segue destination="2vd-L9-RMK" kind="show" identifier="docdoc" id="vlV-5J-OOg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oq0-xG-Nvq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -957,7 +902,7 @@
             <objects>
                 <viewController id="CHn-0u-l5y" customClass="PickImageViewController" customModule="HealthSheet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P8g-X6-p7l">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kp0-22-bdf">
@@ -1122,25 +1067,6 @@
             <point key="canvasLocation" x="3740.579710144928" y="1115.625"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="sN8-iT-hCI">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MtA-9c-emP" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="L3f-Ff-Nuw"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rdl-pq-4SE">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="d1b-VC-xCB" kind="relationship" relationship="rootViewController" id="F2L-At-Bxd"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QQT-2d-asA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1393" y="297"/>
-        </scene>
-        <!--Navigation Controller-->
         <scene sceneID="6fU-nI-JJy">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ylv-qm-gtD" sceneMemberID="viewController">
@@ -1165,7 +1091,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="tDe-sM-400"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dlb-wv-bJb">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1177,28 +1103,7 @@
             </objects>
             <point key="canvasLocation" x="-642.02898550724638" y="304.6875"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="t03-Lz-KGQ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LeT-0v-KkM" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IEQ-4r-Dik">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="cO8-F3-dG3" kind="relationship" relationship="rootViewController" id="7FA-dA-eF6"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6x2-aU-mYQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-330.43478260869568" y="-589.28571428571422"/>
-        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="M9K-Je-4gx"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="121608451_721247931936968_6424080643429221765_n" width="612" height="816"/>
         <image name="125189860_3451188968332972_896110085611008823_n" width="460" height="244"/>
@@ -1209,9 +1114,6 @@
         <image name="pexels-karolina-grabowska-4226805" width="2613" height="3946"/>
         <image name="scan_research_magnifier_virus_disease_coronavirus_covid_icon_134757" width="512" height="512"/>
         <image name="star" catalog="system" width="128" height="116"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -1220,9 +1122,6 @@
         </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
