@@ -26,6 +26,4 @@ class WelcomeViewController: UIViewController {
         }
         
     }
-
-
 }

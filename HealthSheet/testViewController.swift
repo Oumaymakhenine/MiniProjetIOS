@@ -7,10 +7,12 @@
 
 import UIKit
 import Alamofire
+
+
 class testViewController: UIViewController ,UITableViewDataSource,UITableViewDelegate{
    
-     let serverUrl = "http://172.16.123.25:3000/api/auth/getuser"
-
+     let serverUrl = "http://192.168.43.111:3000/api/auth/getuser"
+    @IBOutlet weak var menub: UIButton!
     
     
     let cellReuseIdentifier = "ReusableTableCell"
@@ -102,7 +104,7 @@ class testViewController: UIViewController ,UITableViewDataSource,UITableViewDel
 
                                  do {
                                      u  = try decoder.decode(User.self, from: jsonData)
-                                     print("ye rabii" + u.email)
+                                     //print("ye rabii" + u.email)
                                     self.performSegue(withIdentifier: "ab", sender: u)
                                          //return us
                                      } catch {

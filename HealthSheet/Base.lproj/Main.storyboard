@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g0H-ga-oLo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fh6-Le-QXH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -269,7 +269,7 @@
             <objects>
                 <viewController id="Ze9-1M-bUe" customClass="AccountController" customModule="HealthSheet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UUH-dn-ZuB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfB-yT-GL6">
@@ -485,11 +485,12 @@
                         <outlet property="usrn" destination="Vsn-C7-M6t" id="ID3-ZI-4wC"/>
                         <outlet property="usrp" destination="uu2-4E-eWz" id="qd0-Pd-avO"/>
                         <segue destination="J4B-2j-Wrs" kind="show" identifier="first" id="8gr-jv-5rt"/>
+                        <segue destination="Ze9-1M-bUe" kind="show" identifier="account" id="0DS-Q8-9NQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oq0-xG-Nvq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3518.840579710145" y="77.678571428571431"/>
+            <point key="canvasLocation" x="3481" y="238"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="mfS-uA-Aoq">
@@ -581,7 +582,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="CHv-qP-Wve"/>
                     <connections>
-                        <segue destination="d1b-VC-xCB" kind="show" identifier="l" id="3k3-kk-V2E"/>
+                        <segue destination="nUG-8k-uFQ" kind="show" identifier="l" id="GXI-mW-9Ga"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tvu-FK-Taa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -616,6 +617,9 @@
                                 <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="password2:" destination="Jxz-GY-Y3e" eventType="editingDidEnd" id="pdc-fS-8Bd"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QpH-V9-ahW">
                                 <rect key="frame" x="50" y="94" width="279" height="34"/>
@@ -635,10 +639,6 @@
                                 <rect key="frame" x="275" y="501" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zz0-aI-snU">
-                                <rect key="frame" x="275" y="570" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Doctor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omE-rH-axH">
                                 <rect key="frame" x="43" y="505" width="59" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -646,35 +646,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Patient" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FkO-kb-5SE">
-                                <rect key="frame" x="43" y="573" width="67" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Kk-ok-eZW">
-                                <rect key="frame" x="165" y="637" width="238" height="126"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Speciality" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brr-at-R64">
-                                <rect key="frame" x="32" y="689" width="90" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcM-sx-5Lf">
                                 <rect key="frame" x="74" y="771" width="266" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
                                 <state key="normal" title="Sign up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" systemColor="systemBlueColor"/>
+                                    <color key="titleShadowColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="s:" destination="Jxz-GY-Y3e" eventType="touchUpInside" id="O2i-u4-Wyj"/>
                                     <action selector="signup:" destination="Jxz-GY-Y3e" eventType="touchUpInside" id="cIf-Zp-VLd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxN-nE-R1J">
+                                <rect key="frame" x="74" y="692" width="266" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.053686587510000001" green="0.32578887150000002" blue="0.91788388279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="hama:" destination="Jxz-GY-Y3e" eventType="touchUpInside" id="iIM-xn-XUD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -683,14 +677,19 @@
                     </view>
                     <navigationItem key="navigationItem" id="WVJ-WU-goG"/>
                     <connections>
+                        <outlet property="doc" destination="JhE-XA-iVH" id="gzy-VB-YIX"/>
+                        <outlet property="doctor" destination="dSD-7s-6sH" id="rzp-l9-fbT"/>
                         <outlet property="email" destination="p4r-L9-qP1" id="MHF-vY-wd4"/>
+                        <outlet property="firstname" destination="QpH-V9-ahW" id="itA-sy-UcP"/>
+                        <outlet property="lastname" destination="oU5-Tj-wxh" id="3Xe-kM-0hR"/>
                         <outlet property="password" destination="bc4-cy-9If" id="gzn-Or-5Kg"/>
+                        <outlet property="pssword2" destination="rbX-yo-sAk" id="klw-h5-Oj3"/>
                         <outlet property="username" destination="QpH-V9-ahW" id="p81-fG-kAg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IeY-n4-MDo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4300" y="77.678571428571431"/>
+            <point key="canvasLocation" x="4298.5507246376819" y="77.678571428571431"/>
         </scene>
         <!--Side Menu Navigation Controller-->
         <scene sceneID="AJ1-Xm-IA6">
@@ -895,7 +894,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A5x-zX-Rpe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="124.6376811594203" y="1360.0446428571429"/>
+            <point key="canvasLocation" x="-1364" y="1361"/>
         </scene>
         <!--Pick Image View Controller-->
         <scene sceneID="CYR-e7-9Zn">
@@ -1091,7 +1090,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="tDe-sM-400"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dlb-wv-bJb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1104,6 +1103,9 @@
             <point key="canvasLocation" x="-642.02898550724638" y="304.6875"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="GXI-mW-9Ga"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="121608451_721247931936968_6424080643429221765_n" width="612" height="816"/>
         <image name="125189860_3451188968332972_896110085611008823_n" width="460" height="244"/>
@@ -1122,6 +1124,9 @@
         </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

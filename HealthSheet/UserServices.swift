@@ -32,7 +32,7 @@ static func getUser(u:User) -> User {
 
                             do {
                                 us  = try decoder.decode(User.self, from: jsonData)
-                                print("ye rabii" + us.email)
+                               
                                     //return us
                                 } catch {
                                 print(error)

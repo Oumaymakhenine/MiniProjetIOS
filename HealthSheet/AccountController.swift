@@ -9,30 +9,37 @@ import UIKit
 
 class AccountController: UIViewController {
 
+    let serverUrl = "http://192.168.43.111:3000/api/auth/updateuser"
+
+    
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var ln: UITextField!
     @IBOutlet weak var fn: UITextField!
     @IBOutlet weak var username: UILabel!
     
+    
+    static var dtaa = "ggg"
+      var people = Testuser(roles: ["h"], listofdp: ["d"], username: "x", firstname: "x", lastname: "x", email: "x", password: "x")
 
-    let serverUrl = "http://172.16.123.25:3000/api/auth/updateuser"
 
-
+    
 
     
     @IBAction func upd(_ sender: Any) {
         
-        var u = Userc( username: "x", password: "a")
+       /* var u = Userc( username: "x", password: "a")
          //= fn.text as! String
         // = ln.text as! String
-        u.email = email.text as! String
+        u.email = email.text as! String*/
+        
+        people.email = email.text!
+        people.firstname = fn.text!
+        people.lastname = ln.text!
         
         AF.request(serverUrl,
                       method: .post,
-                      parameters: u,
+                      parameters: people,
                       encoder: JSONParameterEncoder.default).response { response in
-   //                    response in
-   //                    debugPrint(response)
                        switch response.result {
 
                        
@@ -40,6 +47,7 @@ class AccountController: UIViewController {
                         
                         print("Validation Successful Hama")
                        var dataString = NSString(data: response.data!, encoding:String.Encoding.utf8.rawValue)
+                        
                     var   dd = dataString! as String
                        
 //                                let data = response.data
@@ -57,6 +65,25 @@ class AccountController: UIViewController {
     @IBOutlet weak var update: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        let jsonData = Data(FirstViewController.dtaa.utf8)
+        let decoder = JSONDecoder()
+
+        do {
+             people = try decoder.decode(Testuser.self, from: jsonData)
+           // print("haammmaa")
+          //  print(people.username)
+          //  print(people.listofdp[0])
+         //   let h = User(username: people.listofdp[0], firstname: "d", lastname: "d", email: "d")
+           // var hama = UserServices.getUser(u: h)
+            
+           // print("ye rabi  "+hama.email)
+            //print(people.listdp[0].username)
+          //  print(people.description)
+            } catch {
+            print(error)
+        }
         
        
             

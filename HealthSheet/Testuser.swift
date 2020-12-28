@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct Testuser :Decodable {
+struct Testuser :Codable {
    var roles:[String]
   var listofdp:[String]
   //  var _id:String

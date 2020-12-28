@@ -60,7 +60,7 @@ class PickImageViewController: UIViewController {
             let image = picture.image
             let imageData = image?.jpegData(compressionQuality: 0.7)
 
-             let url =  "http://172.16.123.25:3000/api/auth/uploadfile"
+             let url =  "http://192.168.43.111:3000/api/auth/uploadfile"
              var urlRequest = URLRequest(url: URL(string: url)!)
 
              urlRequest.httpMethod = "post"
