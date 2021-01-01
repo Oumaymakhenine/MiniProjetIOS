@@ -9,8 +9,8 @@ import UIKit
 
 class TestgetImgViewController: UIViewController {
 
-    let url = "http://192.168.43.111:3000/api/image/1607333808489-HealthSheet-file.jpg"
-    let urll = URL(fileURLWithPath: "http://192.168.43.111:3000/api/image/1607333808489-HealthSheet-file.jpg")
+    let url = "http://192.168.5.121:3000/api/image/1607333808489-HealthSheet-file.jpg"
+    let urll = URL(fileURLWithPath: "http://192.168.5.121:3000/api/image/1607333808489-HealthSheet-file.jpg")
     @IBOutlet weak var img: UIImageView!
 
     private func fetchImage() {

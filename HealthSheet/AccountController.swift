@@ -9,7 +9,7 @@ import UIKit
 
 class AccountController: UIViewController {
 
-    let serverUrl = "http://192.168.43.111:3000/api/auth/updateuser"
+    let serverUrl = "http://192.168.5.121:3000/api/auth/updateuser"
 
     
     @IBOutlet weak var email: UITextField!
