@@ -9,7 +9,7 @@ import UIKit
 
 class AccountController: UIViewController {
 
-    let serverUrl = "http://192.168.5.121:3000/api/auth/updateuser"
+    let serverUrl = "http://192.168.1.55:3000/api/auth/updateuser"
 
     
     @IBOutlet weak var email: UITextField!
@@ -19,8 +19,7 @@ class AccountController: UIViewController {
     
     
     static var dtaa = "ggg"
-      var people = Testuser(roles: ["h"], listofdp: ["d"], username: "x", firstname: "x", lastname: "x", email: "x", password: "x")
-
+    var people = MenuController.people
 
     
 
@@ -54,7 +53,7 @@ class AccountController: UIViewController {
                       print(dd)
                               
 
-                                  //self.performSegue(withIdentifier: "welcome", sender: dd)
+                                  //self.performSegue(withIdentifier: "accountP", sender: dd)
                                   case let .failure(error):
                                   print(error)
                                }

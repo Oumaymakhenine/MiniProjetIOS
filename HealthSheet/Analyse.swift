@@ -7,13 +7,16 @@
 
 import Foundation
 class Analyse :Codable {
-    internal init(_id: String, description: String) {
-        self._id = _id
-        self.description = description
-    }
-    
-    
-    var _id:String
-    var description:String
+    internal init(id: String,filename:String,doctor:String,patient:String) {
+            
+            self.id = id
+            self.filename = filename
+            self.doctor = doctor
+            self.patient = patient
+        }
+        var doctor:String
+        var patient:String
+        var id:String
+        var filename:String
 
 }

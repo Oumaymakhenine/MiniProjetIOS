@@ -10,15 +10,15 @@ import UIKit
 
 class LoginController: UIViewController {
 
-    let serverUrl = "http://192.168.43.111:3000/api/auth/signin"
+    let serverUrl = "http://192.168.1.54:3000/api/auth/signin"
     
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        
         var dta = sender as! String
         
-        let dest = segue.destination as! FirstViewController
-        
-        FirstViewController.dtaa = dta
+        //let dest = segue.destination as! MenuController
+    
+    MenuController.dtaa = dta
     }
 
   
@@ -47,7 +47,7 @@ class LoginController: UIViewController {
                              var   dd = dataString! as String
                                 
                               // print(dd)
-                               self.performSegue(withIdentifier: "first", sender: dd)
+                               self.performSegue(withIdentifier: "menup", sender: dd)
                             //    self.performSegue(withIdentifier: "welcome", sender: dd)
 
                                 case let .failure(error):

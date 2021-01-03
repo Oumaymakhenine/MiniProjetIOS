@@ -9,7 +9,7 @@ import UIKit
 import Alamofire
 class ListPViewController: UIViewController ,UITableViewDataSource,UITableViewDelegate{
 
-    let serverUrl = "http://192.168.5.121:3000/api/auth/getuser"
+    let serverUrl = "http://172.16.123.25:3000/api/auth/getuser"
     let cellReuseIdentifier = "ReusableTableCell1"
     var hama:[String] = []
     
